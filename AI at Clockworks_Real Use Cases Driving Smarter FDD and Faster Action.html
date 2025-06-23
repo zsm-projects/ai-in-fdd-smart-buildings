@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: AI at Clockworks - Smarter FDD, Faster Action</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F0F4F8;
+        }
+        .bg-brand-dark { background-color: #004AAD; }
+        .bg-brand-primary { background-color: #0094FF; }
+        .bg-brand-light { background-color: #B3E0FF; }
+        .text-brand-dark { color: #004AAD; }
+        .text-brand-primary { color: #0094FF; }
+        .border-brand-primary { border-color: #0094FF; }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flow-node {
+            background-color: white;
+            border: 2px solid #B3E0FF;
+        }
+        .flow-node-ai {
+            background-color: #B3E0FF;
+            border: 2px solid #0094FF;
+        }
+        .flow-arrow {
+            color: #0094FF;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 900;
+            line-height: 2.5rem;
+            color: #004AAD;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-brand-dark text-white p-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight">Smarter FDD, Faster Action</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-brand-light">How Clockworks leverages a spectrum of AI to transform Fault Detection and Diagnostics in smart buildings, turning data into decisive action.</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-4 md:p-8">
+
+        <section id="scale" class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-center mb-12 md:mb-20">
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <p class="text-5xl font-black text-brand-primary">3,400+</p>
+                <p class="mt-2 text-lg font-semibold">Buildings Connected</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <p class="text-5xl font-black text-brand-primary">500,000+</p>
+                <p class="mt-2 text-lg font-semibold">Equipment Analyzed</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <p class="text-5xl font-black text-brand-primary">4.5M+</p>
+                <p class="mt-2 text-lg font-semibold">Data Points Streaming</p>
+            </div>
+        </section>
+
+        <section id="ai-spectrum" class="mb-12 md:mb-20">
+            <h2 class="section-title text-center mb-8">The Right Tool for the Job: A Spectrum of AI</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-brand-dark">
+                    <h3 class="text-2xl font-bold text-brand-dark">Expert Systems (ES)</h3>
+                    <p class="mt-2">The foundation of trust. Uses physics-based logic and engineering rules to accurately diagnose complex problems. This is the core of reliable FDD.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-brand-primary">
+                    <h3 class="text-2xl font-bold text-brand-primary">Machine Learning (ML)</h3>
+                    <p class="mt-2">The efficiency engine. Uses statistical algorithms to learn patterns, automating repetitive tasks like cleaning up and classifying inconsistent data points.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-brand-light">
+                    <h3 class="text-2xl font-bold text-gray-700">Large Language Models (LLM)</h3>
+                    <p class="mt-2">The natural interface. Enables intuitive interaction with data through text prompts, summarizing insights and orchestrating complex workflows.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="lifecycle" class="mb-12 md:mb-20">
+            <h2 class="section-title text-center mb-12">The Clockworks AI-Enhanced FDD Lifecycle</h2>
+            <div class="flex flex-col items-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 w-full max-w-4xl">
+                    <div class="flow-node p-4 rounded-lg text-center"><strong>Raw Data</strong> from BMS</div>
+                    <div class="flow-node p-4 rounded-lg text-center">Additional <strong>Info/Documents</strong></div>
+                    <div class="flex justify-center items-center"><span class="flow-arrow">&#129047;</span></div>
+                    <div class="flex justify-center items-center"><span class="flow-arrow">&#129047;</span></div>
+                    <div class="flow-node-ai p-4 rounded-lg text-center font-semibold">[ML] Point Inference</div>
+                    <div class="flow-node-ai p-4 rounded-lg text-center font-semibold">[LLM] Document Parser</div>
+                </div>
+                
+                <div class="my-4 text-center">
+                     <span class="flow-arrow -mt-4">&#129043;</span>
+                     <span class="flow-arrow -mt-4 -ml-4">&#129042;</span>
+                </div>
+                
+                <div class="flow-node p-6 rounded-lg text-center w-full max-w-lg font-bold text-lg">Asset Register / Information Model</div>
+                
+                <div class="my-4 text-center"><span class="flow-arrow">&#129047;</span></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl relative">
+                    <div class="absolute top-1/2 left-0 right-0 h-1 bg-brand-light hidden md:block" style="z-index:-1;"></div>
+                    <div class="absolute w-1 h-full top-0 left-1/2 -translate-x-1/2 bg-brand-light hidden md:block" style="z-index:-1;"></div>
+                    
+                    <div class="flow-node-ai p-4 rounded-lg text-center font-semibold">[ES] Automated QA</div>
+                    <div class="flow-node-ai p-4 rounded-lg text-center font-semibold">[ES] Diagnostics</div>
+                    <div class="flow-node-ai p-4 rounded-lg text-center font-semibold">[LLM] Data Exploration</div>
+                </div>
+
+                <div class="my-4 text-center">
+                     <span class="flow-arrow -mt-4">&#129042;</span>
+                     <span class="flow-arrow -mt-4 -ml-4">&#129043;</span>
+                </div>
+
+                <div class="flow-node-ai bg-brand-primary text-white p-6 rounded-lg text-center w-full max-w-lg font-bold text-lg">[LLM] Orchestrated Workflows</div>
+                <div class="my-4 text-center"><span class="flow-arrow">&#129047;</span></div>
+                <div class="flow-node bg-green-200 border-green-500 p-6 rounded-lg text-center w-full max-w-lg font-bold text-lg text-green-800">Smarter, Faster, Actionable Insights</div>
+            </div>
+        </section>
+
+        <section id="deep-dive" class="mb-12 md:mb-20">
+            <h2 class="section-title text-center mb-8">AI Use Cases in Action</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-brand-dark mb-2">Point Inference (ML)</h3>
+                    <p class="mb-4">Automatically cleans and standardizes messy point names from building systems, reducing manual setup time and ensuring data consistency.</p>
+                    <div class="bg-gray-100 p-4 rounded-lg font-mono text-sm">
+                        <p class="text-red-600">"return_t" &rarr; <span class="text-green-600 font-bold">ReturnAirTemp</span></p>
+                        <p class="text-red-600">"SF_Speed" &rarr; <span class="text-green-600 font-bold">SupplyFanSpeed</span></p>
+                    </div>
+                </div>
+                 <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-brand-dark mb-2">Document Parser (LLM)</h3>
+                    <p class="mb-4">Extracts critical information from unstructured PDF documents like manuals and sequences of operation, turning them into structured data for analysis.</p>
+                    <div class="bg-gray-100 p-4 rounded-lg font-mono text-sm flex items-center justify-center">
+                       <span class="text-2xl">📄</span> <span class="text-brand-primary mx-4 font-bold">&rarr;</span> <span class="text-green-600 font-bold">{ "json": "data" }</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-brand-dark mb-2">Automated QA (Expert Systems)</h3>
+                    <p class="mb-4">Runs automated checks on the configured data model to identify gaps and errors before diagnostics run, preventing false positives and negatives.</p>
+                     <div class="bg-red-100 p-4 rounded-lg font-mono text-sm text-red-800">
+                       <p><span class="font-bold">FLAG:</span> Missing Info</p>
+                       <p class="mt-1">Supply fan rated power is missing for AHU-1.</p>
+                    </div>
+                </div>
+                 <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-brand-dark mb-2">Data Exploration (LLM)</h3>
+                    <p class="mb-4">Allows users to ask questions in plain English and receive instant data visualizations, removing the need for complex querying or report building.</p>
+                    <div class="bg-gray-100 p-4 rounded-lg font-mono text-sm text-gray-700">
+                       <p class="font-bold">&gt; "Plot my top 10 avoidable costs for last month"</p>
+                       <p class="text-green-600 mt-1">&rarr; Generating bar chart...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diagnostics-power" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-12 md:mb-20">
+            <h2 class="section-title text-center mb-8">The Power of Trusted Diagnostics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-4">Physics-Based, Not Just Predictive</h3>
+                    <p class="mb-4">Clockworks' Expert Systems form the core of its diagnostic engine. By using over 50 expert systems rooted in thermodynamics and engineering principles, the platform delivers findings that are accurate, reliable, and actionable.</p>
+                    <div class="bg-brand-dark text-white p-6 rounded-lg text-center">
+                        <p class="text-lg">Example Fault: <span class="font-bold">Simultaneous Heating & Cooling</span></p>
+                        <p class="text-lg mt-1">Root Cause: <span class="font-bold">Leaking HW Valve</span></p>
+                        <p class="text-4xl font-black text-brand-light mt-4">$350/day</p>
+                        <p class="font-semibold">Avoidable Cost</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-center text-brand-dark mb-4">Prioritizing Action</h3>
+                    <p class="text-center mb-4">Diagnostics are automatically prioritized by their impact on energy, maintenance, and comfort, helping teams focus on what matters most.</p>
+                    <div class="chart-container">
+                        <canvas id="impactChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="conclusion" class="bg-brand-dark text-white p-8 rounded-xl shadow-lg text-center">
+             <h2 class="text-3xl md:text-4xl font-black mb-4">The Blueprint for Success in FDD</h2>
+             <p class="max-w-4xl mx-auto text-lg text-brand-light">The future of building operations isn't about choosing one type of AI. It's about orchestrating a team of specialized AIs, grounded in a foundation of structured data and trusted expert knowledge, to deliver unparalleled insights.</p>
+             <div class="mt-6 bg-white text-brand-dark p-4 rounded-lg inline-block font-mono font-bold text-sm md:text-lg">
+                Structured Data + Expert Systems + Modern AI = Trusted, Actionable Insights
+             </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-4 text-gray-500 text-sm">
+        <p>Infographic based on the "AI at Clockworks" webinar. All data and concepts are derived from the presentation.</p>
+    </footer>
+
+    <script>
+        function wrapLabel(str, maxLen) {
+            if (str.length <= maxLen) {
+                return str;
+            }
+            const words = str.split(' ');
+            let currentLine = '';
+            const lines = [];
+            for (const word of words) {
+                if ((currentLine + ' ' + word).trim().length > maxLen) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            }
+            if (currentLine) {
+                lines.push(currentLine.trim());
+            }
+            return lines;
+        }
+
+        const ctx = document.getElementById('impactChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Energy Impact', 'Maintenance Impact', 'Comfort Impact'],
+                datasets: [{
+                    label: 'Diagnostic Priority',
+                    data: [10, 6, 3],
+                    backgroundColor: [
+                        '#004AAD',
+                        '#0094FF',
+                        '#B3E0FF'
+                    ],
+                    borderColor: [
+                        '#FFFFFF'
+                    ],
+                    borderWidth: 2,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
